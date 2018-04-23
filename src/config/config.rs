@@ -10,7 +10,7 @@ pub struct Config {
     pub port: u16,
 }
 
-const DEFAULT_DOC_ROOT: &str = "./";
+const DEFAULT_DOC_ROOT: &str = "/var/www/html/";
 const DEFAULT_NUM_THREADS: usize = 16;
 const DEFAULT_PORT: u16 = 8080;
 
