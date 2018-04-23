@@ -12,7 +12,7 @@ pub struct Config {
 
 const DEFAULT_DOC_ROOT: &str = "/var/www/html/";
 const DEFAULT_NUM_THREADS: usize = 16;
-const DEFAULT_PORT: u16 = 8080;
+const DEFAULT_PORT: u16 = 80;
 
 impl Config {
     pub fn parse<S>(filepath: S) -> Result<Config> where S: Into<String> {
