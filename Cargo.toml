@@ -1,0 +1,12 @@
+[package]
+name = "http_server"
+version = "0.1.0"
+authors = ["zwirec <zwirec@icloud.com>"]
+
+[dependencies]
+percent-encoding = "1.0.1"
+strum = "*"
+strum_macros = "*"
+regex = "*"
+lazy_static = "*"
+chrono = "*"
