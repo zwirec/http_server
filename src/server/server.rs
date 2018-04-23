@@ -28,7 +28,7 @@ pub struct Server {
 
 impl Server {
     pub fn new(config: &Config) -> Server {
-        let listener = TcpListener::bind(format!("{}{}", String::from("127.0.0.1:"), config.port.to_string())).unwrap();
+        let listener = TcpListener::bind(format!("{}{}", String::from("0.0.0.0:"), config.port.to_string())).unwrap();
         let pool = ThreadPool::new(config.thread_num);
         DOC_ROOT.lock().unwrap().push_str(config.document_root.as_str());
         Server {
