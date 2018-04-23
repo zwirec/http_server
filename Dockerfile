@@ -7,4 +7,4 @@ RUN cargo install -vv
 
 EXPOSE 80
 
-CMD ~/.cargo/bin/http_server
+CMD /root/.cargo/bin/http_server
